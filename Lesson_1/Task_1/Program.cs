@@ -1,4 +1,5 @@
-﻿Console.Write ("Введите первое целое число: ");
+﻿Console.WriteLine ("Данная программа принимает на вход два целых числа и находит максимальное");
+Console.Write ("Введите первое целое число: ");
 int first_number = Convert.ToInt32 (Console.ReadLine());
 Console.Write ("Введите второе целое число: ");
 int second_number = Convert.ToInt32 (Console.ReadLine());
