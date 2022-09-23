@@ -10,7 +10,7 @@ else
 {
     int storage = number;
     double counter = 0;
-    while (number / 100 > 0)
+    while (number / 100 != 0)
     {
         number /= 10;
         counter++;
