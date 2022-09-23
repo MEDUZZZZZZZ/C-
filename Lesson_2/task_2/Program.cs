@@ -14,7 +14,7 @@
         Console.WriteLine($"Третья цифра числа --> {third_num}");  
    }
 }
-Console.WriteLine("Данная программа находит третью цифру любого числа");
+Console.WriteLine("Данная программа находит третью цифру числа");
 Console.Write("Введите число ");
 try
 {
