@@ -43,7 +43,7 @@ double [] FindAverage(int [,] matrix_2)
     }
 void PrintArray(double[] mas1)
     {
-        Console.WriteLine("Средние значения: ");
+        Console.WriteLine("Средние значения для каждого столбца: ");
         for (int i=0; i<mas1.Length;i++)
             {
                 if (i != mas1.Length - 1) Console.Write($"{mas1[i]}, ");
