@@ -61,7 +61,7 @@ int [] [] FindExtra (int [,] matrix_2)
     }
     
 
-void PrintArray(int[] [] mas_1)
+void PrintData(int[] [] mas_1)
     {
         Console.Write($"Максимальное число: {mas_1[0] [0]}! ");
         Console.WriteLine($"Его индекс: [{mas_1[0] [1]}, {mas_1[0] [2]}]. ");
@@ -72,4 +72,4 @@ void PrintArray(int[] [] mas_1)
 int [,] my_matrix = DoubleMatrixMaker();
 DoubleMatrixPrinter(my_matrix);
 int [] [] minmax = FindExtra(my_matrix);
-PrintArray(minmax);
+PrintData(minmax);
