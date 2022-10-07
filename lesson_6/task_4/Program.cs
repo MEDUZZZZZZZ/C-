@@ -4,7 +4,7 @@
         int columns = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите число строк: ");
         int raws = Convert.ToInt32(Console.ReadLine());
-        int [,] matrix = new int [columns, raws];
+        int [,] matrix = new int [raws, columns];
         for (int idx_c = 0; idx_c < matrix.GetLength(0); idx_c++)
             {
                 for (int idx_r = 0; idx_r < matrix.GetLength(1); idx_r++)

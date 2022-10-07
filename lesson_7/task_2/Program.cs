@@ -12,7 +12,7 @@
 
 int [,] GenerateMatrix(int m, int n)
     {
-        int [,] matrix = new int [m, n];
+        int [,] matrix = new int [n, m];
         int item = 1;
         for (int idx_c = 0; idx_c < matrix.GetLength(0); idx_c++)
             {
@@ -48,7 +48,7 @@ object FindByIndex (int [,] matrix_2, int [] data)
             }
         else return "По заданному индексу элемент не найден";
     }
-int [,] my_matrix = GenerateMatrix(4, 4);
+int [,] my_matrix = GenerateMatrix(3, 4);
 MatrixPrinter(my_matrix);
 int [] search = InputCord();
 object result = FindByIndex(my_matrix, search);

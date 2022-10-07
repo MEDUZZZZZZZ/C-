@@ -13,7 +13,7 @@ double [,] MatrixGen (int [] sizes)
     {
         int columns = sizes[0];
         int raws = sizes[1];
-        double [,] matrix = new double [columns, raws];
+        double [,] matrix = new double [raws, columns];
         for (int idx_c = 0; idx_c < matrix.GetLength(0); idx_c++)
             {
                 for (int idx_r = 0; idx_r < matrix.GetLength(1); idx_r++)
