@@ -5,8 +5,8 @@
         int columns = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите строчный индекс: ");
         int raws = Convert.ToInt32(Console.ReadLine());
-        Data[0] = columns;
-        Data[1] = raws;
+        Data[0] = raws;
+        Data[1] = columns;
         return Data; 
     }
 
