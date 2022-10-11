@@ -62,7 +62,31 @@ int [,] MatrixSorter (int [,] matrix_1)
             }
             return matrix_1;
 }
+// Второй вариант функции
+// int [,] MatrixSorter (int [,] matrix_1)
+//     {
+//         int storage;
+//         for (int idx_c = 0; idx_c < matrix_1.GetLength(0); idx_c++)
+//             {
+//                 for (int idx_r = 0; idx_r < matrix_1.GetLength(1); idx_r++)
+//                     {
+//                         for (int i = 0; i < matrix_1.GetLength(0); i++)
+//                             {
+//                                 for (int j = 0; j <matrix_1.GetLength(1); j++)
+//                                     {
+//                                         if (matrix_1[idx_c,idx_r] < matrix_1[i, j])
+//                                             {
+//                                                 storage = matrix_1[idx_c, idx_r];
+//                                                 matrix_1[idx_c,idx_r] = matrix_1[i, j];
+//                                                 matrix_1[i, j] = storage;
+//                                             }
+//                                     }
+//                             }
+//                     }
+//             }
+//             return matrix_1;
 int [,] my_matrix = DoubleMatrixMaker();
 DoubleMatrixPrinter(my_matrix);
 int [,] new_matrix = MatrixSorter(my_matrix);
 DoubleMatrixPrinter(new_matrix);
+
