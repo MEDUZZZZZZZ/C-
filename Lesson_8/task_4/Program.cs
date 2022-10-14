@@ -30,7 +30,7 @@ void Matrix3DPrinter (int [,,] matrix_1)
                     {
                         for (int k = 0; k < matrix_1.GetLength(2); k++)
                             {
-                                Console.Write($"Элемент {matrix_1[i, j, k]} Индекс: ({i}, {j}, {k}) ");
+                                Console.Write($" {matrix_1[i, j, k]} ({i}, {j}, {k}) ");
                             }
                         Console.WriteLine();
                     }
