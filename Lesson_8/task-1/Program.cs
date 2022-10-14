@@ -16,7 +16,6 @@
     }
 void DoubleMatrixPrinter (int [,] matrix_1)
     {
-        Console.WriteLine("Матрица: ");
         for (int idx_c = 0; idx_c < matrix_1.GetLength(0); idx_c++)
             {
                 for (int idx_r = 0; idx_r < matrix_1.GetLength(1); idx_r++)
@@ -45,6 +44,8 @@ int [,] SortByRow (int [,] matrix_1)
                         return matrix_1;
                     }
 int [,] my_matrix = DoubleMatrixMaker();
+Console.WriteLine("Исходная матрица: ");
 DoubleMatrixPrinter(my_matrix);
 int [,] new_matrix = SortByRow(my_matrix);
+Console.WriteLine("Отсортированная матрица: ");
 DoubleMatrixPrinter(my_matrix);

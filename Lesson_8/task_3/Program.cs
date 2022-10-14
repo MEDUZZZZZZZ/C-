@@ -15,7 +15,6 @@
     }
 void DoubleMatrixPrinter (int [,] matrix_1)
     {
-        Console.WriteLine("Матрица");
         for (int idx_c = 0; idx_c < matrix_1.GetLength(0); idx_c++)
             {
                 for (int idx_r = 0; idx_r < matrix_1.GetLength(1); idx_r++)
@@ -26,8 +25,11 @@ void DoubleMatrixPrinter (int [,] matrix_1)
             }
     }
 int [,] my_matrix_1 = new int [,] {{2,4},{3,2},{3,4}};
+Console.WriteLine("Исходная матрица 1");
 DoubleMatrixPrinter(my_matrix_1);
 int [,] my_matrix_2 = new int [,] {{3,4,5},{3,3,3}};
+Console.WriteLine("Исходная матрица 2");
 DoubleMatrixPrinter(my_matrix_2);
 int [,] result = MatrixMultiplicator(my_matrix_1,my_matrix_2);
+Console.WriteLine("Результирующая матрица");
 DoubleMatrixPrinter(result);
